@@ -5,8 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Propagation</title>
+    <style>
+        ul{
+            display: none;
+        }
+        /* Khi focus vào thẻ input thì sẽ hiện theo ul NGAY SAU nó 
+        Dấu ~ thể hiện phân tử theo NGAY SAU */
+        input:focus ~ ul{
+            display: block;
+        }
+    </style>
 </head>
 <body>
-    
+    <a href="https://vi-vn.facebook.com/">facebook</a>
+    <br />
+    <a href="https://www.youtube.com/">youtube</a>
+    <br>
+
+
+    <input placeholder="Tìm kiếm" type="text">
+    <ul>
+        <li>Js</li>
+        <li>PHP</li>
+        <li>Java</li>
+    </ul>
+
+    <script src="./main.js"></script>
 </body>
 </html>
