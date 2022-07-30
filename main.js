@@ -25,3 +25,14 @@ ulElement.onmousedown = function(e){
 ulElement.onclick = function(e){
     console.log(e.target);
 }
+
+// Xử lí sự kiện nổi bọt
+document.querySelector('div').onclick = function(){
+    console.log('text');
+}
+
+document.querySelector('button').onclick = function(e){
+    // Dừng sự kiện nổi bọt
+    e.stopPropagation();
+    console.log('click');
+}
